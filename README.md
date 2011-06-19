@@ -4,8 +4,32 @@ A thin, environment-agnostic helper for RESTful web service clients in JavaScrip
 
 This helper provides a simple API to interact with a RESTful web service, abstracting from the underlying mechanisms. 
 
+## FAQ
 
-## API
+> Is this a fully-featured HTTP client?
+
+No, it is not. It's rather a very thin abstraction layer to use the same code base for high-level JavaScript-based clients to RESTful web services. It is currently designed to work with PhoneGap and node.js
+
+
+> Can I use it in the browser?
+
+This helper library has not been designed for usage inside browsers (except PhoneGap) so far. Please note that PhoneGap circumvents the Same-Origin-Policy, which is not addressed in rest-client.js. 
+
+
+## Usage
+
+Node.js:
+
+	var restClient = require('rest-client.js');
+
+Browser (PhoneGap!):
+
+	<script type="text/javascript" charset="utf-8" src="rest-client.js"></script>
+	<script>
+	var restClient = this.restClient;
+	</script>
+
+### API
 
 tbd.
 
