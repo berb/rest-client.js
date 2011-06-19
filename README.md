@@ -32,18 +32,23 @@ Browser (PhoneGap!):
 ### API
 
 GET request
+
 	client.get(uri, requestHeaders, function(err, responseCode, responseHeaders, responseEntity));
 
 HEAD request
+
 	client.head(uri, requestHeaders, function(err, responseCode, responseHeaders, responseEntity));
 
 POST request
+
 	client.post(uri, requestHeaders, requestEntity, function(err, responseCode, responseHeaders, responseEntity));
 
 PUT request
+
 	client.put(uri, requestHeaders, requestEntity, function(err, responseCode, responseHeaders, responseEntity));
 
 DELETE request
+
 	client.del(uri, requestHeaders, requestEntity, function(err, responseCode, responseHeaders, responseEntity));
 
 The last argument is always a callback, executed after the response has been successfully recieved. It either contains an error object, or (code,headers,entity) of the response. 
