@@ -16,6 +16,10 @@ No, it is not. It's rather a very thin abstraction layer to use the same code ba
 This helper library has not been designed for usage inside browsers (except PhoneGap) so far. Please note that PhoneGap circumvents the Same-Origin-Policy, which is not addressed in rest-client.js. 
 
 
+> What content types are supported?
+
+The helper has only been designed for JSON-based APIs. While other text-based formats might be possibile as well, binary content is not supported.
+
 ## Usage
 
 Node.js:
